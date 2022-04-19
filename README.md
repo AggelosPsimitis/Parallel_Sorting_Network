@@ -1,4 +1,4 @@
-#### Final exercise for parallel and distributed systems class offered in electronic automation post-graduate program (NKUA).
+#### Final exercise for parallel and distributed systems class of electronic automation post-graduate program (NKUA).
 - 3x4 Mesh network for sorting four 3-bit numbers in parallel.
 - The mesh consists of 12 PEs (Processing Elements).
 - Each PE performs 1-bit comparisons and stores/forwards 1-bit signal values to it's right/down PEs along with proper flag signals.

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd" \
+"../../../../Project_Reisis_2021_1.srcs/sim_1/new/COMP_TB.vhd" \
+
+# Do not sort compile order
+nosort

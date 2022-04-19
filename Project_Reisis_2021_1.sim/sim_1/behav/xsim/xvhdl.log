@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NETWORK_TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sim_1/new/NETWORK_TOP_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NETWORK_TOP_tb'

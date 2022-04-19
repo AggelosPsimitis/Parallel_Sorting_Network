@@ -1,0 +1,424 @@
+
+*** Running vivado
+    with args -log NETWORK_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NETWORK_TOP.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source NETWORK_TOP.tcl -notrace
+Command: synth_design -top NETWORK_TOP -part xc7z030ifbv484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16164 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 361.414 ; gain = 100.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NETWORK_TOP' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:19]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE0' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:23]
+INFO: [Synth 8-3491] module 'COMP' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:10' bound to instance 'COMP_inst' of component 'COMP' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'COMP' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'COMP' (1#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:23]
+INFO: [Synth 8-3491] module 'WE_REG' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/WE_REG.vhd:12' bound to instance 'WE_REG_inst' of component 'WE_REG' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'WE_REG' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/WE_REG.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'WE_REG' (2#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/WE_REG.vhd:22]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/MUX.vhd:10' bound to instance 'MUXOUT_inst' of component 'MUX' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/MUX.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (3#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/MUX.vhd:20]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/MUX.vhd:10' bound to instance 'MUXREG_inst' of component 'MUX' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:122]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/Counter.vhd:10' bound to instance 'Couter_inst' of component 'Counter' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/Counter.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (4#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/Counter.vhd:19]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:10' bound to instance 'FSM_inst' of component 'FSM' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:27]
+WARNING: [Synth 8-614] signal 'WAKE_UP' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (5#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'PE' (6#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:23]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE1' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:114]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE2' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:125]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE3' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:136]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE4' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:147]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE5' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:158]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE6' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:169]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE7' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:180]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE8' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:191]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE9' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:202]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE10' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:213]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/PE.vhd:10' bound to instance 'PE11' of component 'PE' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:224]
+WARNING: [Synth 8-6014] Unused sequential element q1_reg was removed.  [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:63]
+WARNING: [Synth 8-3848] Net Y in module/entity NETWORK_TOP does not have driver. [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'NETWORK_TOP' (7#1) [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:19]
+WARNING: [Synth 8-3331] design COMP has unconnected port CLK
+WARNING: [Synth 8-3331] design NETWORK_TOP has unconnected port Y
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.699 ; gain = 156.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.699 ; gain = 156.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030ifbv484-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.699 ; gain = 156.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z030ifbv484-2L
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "FLAG_OUT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'wake_8_temp_reg' into 'wake_4_temp_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/NETWORK_TOP.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 'C_max_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'C_min_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:32]
+WARNING: [Synth 8-327] inferring latch for variable 'Comp_flag_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/COMP.vhd:33]
+WARNING: [Synth 8-327] inferring latch for variable 'FLAG_OUT_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:59]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  closed |                              000 |                              100
+                    idle |                              001 |                              000
+                   right |                              010 |                              011
+                    left |                              011 |                              010
+                   equal |                              100 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'WAKE_NEXT_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'WRITE_REG_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'COUNTER_ENABLE_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'MUX_SEL_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'COMPARE_ENABLE_reg' [C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.srcs/sources_1/new/FSM.vhd:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.699 ; gain = 156.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 12    
++---Registers : 
+	                3 Bit    Registers := 12    
+	                1 Bit    Registers := 34    
++---Muxes : 
+	  22 Input      3 Bit        Muxes := 12    
+	   3 Input      2 Bit        Muxes := 12    
+	   5 Input      2 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 49    
+	   4 Input      1 Bit        Muxes := 24    
+	   5 Input      1 Bit        Muxes := 60    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NETWORK_TOP 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module COMP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module WE_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 5     
+Module PE 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design NETWORK_TOP has unconnected port Y
+WARNING: [Synth 8-3332] Sequential element (PE0/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE0/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE1/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE2/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE3/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE4/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/WRITE_REG_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/COUNTER_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/MUX_SEL_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/MUX_SEL_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE5/FSM_inst/COMPARE_ENABLE_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/COMP_inst/C_max_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/COMP_inst/C_min_reg) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/COMP_inst/Comp_flag_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/COMP_inst/Comp_flag_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/FLAG_OUT_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/FLAG_OUT_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/FSM_sequential_current_state_reg[2]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module NETWORK_TOP.
+WARNING: [Synth 8-3332] Sequential element (PE6/FSM_inst/WAKE_NEXT_reg) is unused and will be removed from module NETWORK_TOP.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 575.156 ; gain = 314.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 575.156 ; gain = 314.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 195 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.859 ; gain = 322.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 693.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 693.277 ; gain = 440.480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 693.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/Project_Reisis_2021_1/Project_Reisis_2021_1.runs/synth_1/NETWORK_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NETWORK_TOP_utilization_synth.rpt -pb NETWORK_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 22 17:14:34 2021...
